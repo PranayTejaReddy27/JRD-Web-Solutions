@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <a href="#" class="logo"><img src="logo.png" alt="" width="50%" height="50%"></a>
         <div class="container">
             <ul class="nav-links">
@@ -27,18 +27,17 @@
             <button class="letschat"><img src="letschat.png" alt=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's Chat</span></button>
         </div>
     </nav>  
-    <div class="title_block">
-        <h1>welcome to JRD Web Solution</h1>
-        <h2>Boost Your Brand</h2>
-    </div>
-    <script>
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-
-        burger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        });
-
-    </script>
+    <main>
+        <img src="https://picsum.photos/id/36/1000/600" class="slide" alt="">
+        <img src="https://picsum.photos/id/37/1000/600" class="slide" alt="">
+        <img src="https://picsum.photos/id/38/1000/600" class="slide" alt="">
+        <img src="https://picsum.photos/id/39/1000/600" class="slide" alt="">
+        <div class="nav">
+            <button onclick="goPrev()" class="prev-btn"><</button>
+            <button onclick="goNext()" class="next-btn">></button>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
 </body>
 </html>
