@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRD</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="logo.png" alt="" width="50%" height="50%"></a>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <button class="letschat"><img src="letschat.png" alt=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's Chat</span></button>
+        </div>
+    </nav>  
+    <div class="title_block">
+        <h1>welcome to JRD Web Solution</h1>
+        <h2>Boost Your Brand</h2>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        });
+
+    </script>
+</body>
+</html>
