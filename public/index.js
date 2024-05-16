@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav-links');
 const slides = document.querySelectorAll(".slide-item");
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
+const letschat = document.querySelector('.letschat');
 
 //menu bar
 burger.addEventListener('click', () => {
@@ -14,8 +15,10 @@ window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
     if (window.scrollY > 0) {
         navbar.classList.add('scrolled');
+        letschat.classList.add('scrolled-button');
     } else {
         navbar.classList.remove('scrolled');
+        letschat.classList.remove('scrolled-button');
     }
 });
 
