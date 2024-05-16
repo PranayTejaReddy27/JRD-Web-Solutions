@@ -42,7 +42,7 @@ body{
 }
 
 .nav-links a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
 }
 
@@ -60,17 +60,18 @@ body{
     margin: 4px;
 }
 .letschat {
-    width: 200px;
+    width: 180px;
     display: flex;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    justify-content: space-evenly;
 }
 .letschat span{
     font-size: large;
     font-family:Tahoma;
-    font-weight:bolder;
+    font-weight:bold;
     justify-content: space-around;
 }
 main{
@@ -103,15 +104,17 @@ main{
 .slide-info p{
     font-size: medium;
     padding: 10px;
+    color: white;
 }
 .slide-info h1{
     font-size: 60px;
     padding: 1px;
+    color: white;
 }
 .slide-buttons{
     position: absolute;
     margin-left: 160px;
-    margin-top: 400px;
+    margin-top: 420px;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -128,13 +131,13 @@ main{
     cursor: pointer;
 }
 .slide-watch-video{
-    width: 170px;
+    width: 220px;
     height: 50px;
     background-color: transparent;
     border: none;
     color: white;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -153,7 +156,7 @@ main{
     flex-direction: column;
     gap: 15px;
     top: 70%;
-    right: 40%;
+    right: 38%;
 }
 .prev-btn,
 .next-btn {
@@ -176,30 +179,35 @@ main{
 .next-btn {
     right: 20px;
 }
-.title_block {
-    justify-content: center;
-    align-items: center;
+.social-media{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    background-color:transparent;
-    height: fit-content;
+    width: 60px;
+    top: 22%;
 }
-.title_block h1{
-    font-size: 20px;
-    margin-top: 20px;
+.social-media p{
+    height: 200px;
+    writing-mode: vertical-rl;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;
 }
-.title_block h2 {
-    font-size: 70px;
-    margin-top: 30px;
-    font-family:"Jersey 20", sans-serif;
+.social-media-icon{
+    width: 45px;
+    height: 45px; 
+    background-color: white;
+    margin: 10px 15px 15px 25px;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
-.jersey-20-regular {
-    font-family: "Jersey 20", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
 @media screen and (max-width: 848px) {
     .logo{
         max-width: 230px;
@@ -241,17 +249,6 @@ main{
     .nav-active li {
         text-align: center;
     }
-    .title_block h1{
-        font-size: 20px;
-        margin-top: 30px;
-        z-index: 1;
-    }
-    .title_block h2 {
-        font-size: 25px;
-        margin-top: 15px;
-        font-family:"Jersey 20", sans-serif;
-        z-index: 1;
-    }
     .letschat{
         position: fixed;
         z-index: 1000;
@@ -270,36 +267,30 @@ main{
         background-color: black;
         position: relative;
         overflow: hidden;
-        
     }
     .slide-item{
         width: 100%;
         height: 400px;
         position: absolute;
     }
-    .slide-item h1{
-        position: absolute;
-        margin-left: 40px;
-        bottom: 60%;
-        transform: translateX(-50%);
-        color: white;
-        font-size: 34px;
-        text-align: center;
-    }
-    .slide-item p{
-        position: absolute;
-        margin-left: 60px;
-        bottom: 70%;
-        transform: translateX(-50%);
-        color: white;
-        font-size: 15px;
-        text-align: center;
-    
-    }
     .slide{
         width: 100%;
         height: 400px;
         position: absolute;
         transition: 0.5s;
+    }
+    .slide-info{
+        height: 400px;
+        width: 80%;
+        right: 10%;
+    }
+    .slide-info h1{
+        font-size: 25px;
+    }
+    .slide-info p{
+        margin-left: -8px;
+    }
+    .social-media {
+        display: none;
     }
 }
