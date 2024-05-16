@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slide-item");
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
@@ -59,7 +59,7 @@ const intervalId = setInterval(() => {
         counter = 0;
     }
     slideImage();
-}, 10000);
+}, 6000);
 
 prevBtn.addEventListener('click', () => {
     clearInterval(intervalId);
