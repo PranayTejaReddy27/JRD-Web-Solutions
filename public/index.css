@@ -43,6 +43,7 @@ body{
 
 .nav-links a {
     color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -97,6 +98,7 @@ main{
     height: 700px;
     position: absolute;
     transition: 0.5s;
+    opacity: 0.4;
 }
 .slide-info{
     display: flex;
@@ -168,10 +170,10 @@ main{
     background: transparent;
     width: 35px;
     height: 35px;
-    border: solid 3px black;
+    border: solid 3px white;
     border-radius: 100%;
     font-size: 24px;
-    color: black;
+    color: white;
     cursor: pointer;
     z-index: 1;
     font-weight: bolder;
@@ -232,10 +234,10 @@ main{
 .clients-satisfactions-inner-div{
     display: flex;
     flex-direction: row;
-    width:  420px;
+    width:  95%;
     height: 170px;
     background-color: rgb(51, 59, 51);
-    border-radius: 60px;
+    border-radius: 50px;
     align-items: center;
     justify-content:space-evenly;
 }
@@ -243,6 +245,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-left: 20px;
 }
 .clients-satisfactions-info h1{
     font-size: 50px;
@@ -259,18 +262,24 @@ main{
     color: white;
 }
 .clients-satisfactions-icons {
-    display: flex;
+    display: -webkit-flex;
+    margin-left: 30px;
+
+}
+.bitmoji-1{
+    margin-top: -15px;
 }
 .bitmoji-2{
     margin-top: 40px;
+    margin-left: -10px;
 }
 .bitmoji-4{
     margin-top: 60px;
+    margin-left: -5px;
 }
 .clients-satisfactions-icons img{
-    width: 60px;
-    height: 60px;
-
+    width: 25%;
+    height: 25%;
 }
 .clients-icons{
     width: 70%;
@@ -278,10 +287,19 @@ main{
     background-color: rgb(51, 59, 51);
     margin-top: 61px;
     position: absolute;
-    margin-left: 446px;
+    margin-left: 30%;
     border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.test{
+.clients-icons img{
+    width: 15%;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+
+}
+.tet{
     width: 1000px;
     height: 1000px;
     background-color: black;
@@ -379,7 +397,66 @@ main{
     .slide-info p{
         margin-left: -8px;
     }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left:10%;
+    }
     .social-media {
         display: none;
+    }
+    .client{
+        height: 150px;
+        margin-top: -40px;
+    }
+    .clients-satisfactions-outer-div{
+        width: 40%;
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 60px;
+        padding: 3px;
+        height: 150px;
+    }
+    .clients-satisfactions-inner-div{
+        border-radius: 50px;
+        margin-top: -5px;
+        height: 130px;
+    }
+    .clients-satisfactions-info {
+        gap: 10px;
+    }
+    .clients-satisfactions-info h1{
+        font-size: 25px;
+        margin-left: -5px;
+
+    }
+    .clients-satisfactions-info p{
+        font-size: 10px; 
+        margin-top: 12px;
+        margin-left: -5px;
+    }
+    .clients-satisfactions-icons img{
+        width: 100%;
+        height: 100%;
+    }
+    .bitmoji-1{
+        margin-left: -20px;
+        margin-top: -45px;
+    }
+    .bitmoji-2{
+        display: none;
+    }
+    .bitmoji-3 {
+        display: none;
+    }
+    .bitmoji-4{
+        display: none;
+
+    }
+    .clients-icons{
+        width: 60%;
+        left: 10%;
+        margin-top: 45px;
+        height: 90px;
     }
 }

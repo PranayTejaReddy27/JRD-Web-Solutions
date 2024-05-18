@@ -5,6 +5,7 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const letschat = document.querySelector('.letschat');
 
+
 //menu bar
 burger.addEventListener('click', () => {
 navLinks.classList.toggle('nav-active');
@@ -16,6 +17,7 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
         navbar.classList.add('scrolled');
         letschat.classList.add('scrolled-button');
+    
     } else {
         navbar.classList.remove('scrolled');
         letschat.classList.remove('scrolled-button');
@@ -70,5 +72,8 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
     clearInterval(intervalId);
 });
+
+
+
 
 
