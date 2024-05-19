@@ -299,21 +299,119 @@ main{
     object-fit: contain;
 
 }
-.tet{
-    width: 1000px;
-    height: 1000px;
-    background-color: black;
+.why-choose-us-title{
+    position: relative;
+    padding: 44px 0px 20px 0px;
+    color: orange;
+    margin-left: 10vw;
+    margin-top: 20px;
 }
-@media screen and (max-width: 848px) {
+.why-choose-us{
+    height: 700px;
+    width: 80vw;
+    display: flex;
+    position: absolute;
+    left: 10%;
+    box-shadow: 10px 20px 10px -20px rgba(0, 0, 0, 0.3);
+}
+.why-choose-us-head{
+    width: 40%;
+}
+.why-choose-us-head h1{
+    font-size: 40px;
+    color: rgb(51, 59, 51)
+}
+.why-choose-us-head img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 30px; 
+}
+.why-choose-us-info{
+    width: 65%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.why-choose-us-info-p{
+    color: rgb(51, 59, 51) ;
+    margin-top: 20px;
+}
+.advantages{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-height: 100px;
+    margin-top: -25px;
+}
+.advantages img{
+    padding: 20px;
+    background-color: rgb(125, 131, 125);
+    border-top-left-radius: 40px;
+}
+.advantages-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 30px;
+
+}
+.advantages-icon h1{
+    color: rgb(51, 59, 51);
+}
+.advantages-icon p{
+    color: rgb(51, 59, 51);
+    font-size: 15px;
+}
+.why-choose-us-info-extands{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.learn-more{
+    width:250px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(51, 59, 51);
+    font-size: 30px;
+    border: none;
+}
+.call-us-now{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-height: 80px;
+}
+.call-us-now img{
+    width: 20%;
+    height: 20%;
+    aspect-ratio: 1/1;
+    border:solid rgb(51, 59, 51) 5px;
+    padding: 10px;
+    border-radius: 100%;
+}
+.call-us-now-extend{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.call-us-now-extend h2{
+    font-size: 25px;
+
+}
+@media screen and (max-width: 878px) {
     .logo{
         max-width: 230px;
         max-height: 150px;
         position: absolute;
         left: 15%;
-        margin-top: 40px;
+        margin-top: 10px;
     }
     .navbar{
-        max-height: 80px;
+        height: 80px;
     }
     .nav-links {
         display: none;
@@ -324,7 +422,7 @@ main{
         flex-direction: column;
         position: absolute;
         right: 5%;
-        margin-top: 40px;
+        margin-top: 10px;
 
     }
     .nav-active {
@@ -335,7 +433,7 @@ main{
         margin-top:130px;
         right: 15%;
         padding: 10px 10px 10px 0px;
-        background-color: #e3ecf6;
+        background-color: rgb(255, 255, 255, 0.1); 
         z-index: 1000;
         position: absolute;
     }
@@ -407,7 +505,7 @@ main{
         display: none;
     }
     .client{
-        height: 150px;
+        height: 100px;
         margin-top: -40px;
     }
     .clients-satisfactions-outer-div{
@@ -415,12 +513,12 @@ main{
         border-top-right-radius: 60px;
         border-bottom-right-radius: 60px;
         padding: 3px;
-        height: 150px;
+        height: 100px;
     }
     .clients-satisfactions-inner-div{
         border-radius: 50px;
         margin-top: -5px;
-        height: 130px;
+        height: 80px;
     }
     .clients-satisfactions-info {
         gap: 10px;
@@ -431,7 +529,7 @@ main{
 
     }
     .clients-satisfactions-info p{
-        font-size: 10px; 
+        font-size: 8px; 
         margin-top: 12px;
         margin-left: -5px;
     }
@@ -441,7 +539,9 @@ main{
     }
     .bitmoji-1{
         margin-left: -20px;
-        margin-top: -45px;
+        margin-top: -30px;
+        width: 15px;
+        height: 15px;
     }
     .bitmoji-2{
         display: none;
@@ -457,6 +557,82 @@ main{
         width: 60%;
         left: 10%;
         margin-top: 45px;
-        height: 90px;
+        height: 40px;
+        border-bottom-left-radius: 20px;
+    }
+    .why-choose-us-title{
+        margin-top: -30px;
+    }
+    .why-choose-us{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: fit-content;
+    }
+    .why-choose-us-head h1{
+        width: 85vw;
+        font-size: 25px;
+        text-align: justify;
+    }
+    .why-choose-us-head img{
+        width: 180px;
+        margin-left: 75px;
+        margin-top: -2px;
+        aspect-ratio: 1/1;
+    }
+    .why-choose-us-info{
+        width: 80wv;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }   
+    .why-choose-us-info-p {
+        color: rgb(51, 59, 51);
+        margin-top: 20px;
+        width: 79vw;
+        text-align:justify;
+    }
+    .advantages{
+        padding-top: 20px;
+    }
+    .advantages-icon{
+        align-items: center;
+        margin-top: -20px;
+    }
+    .advantages h1{
+        font-size: 18px;
+        width: 50vw;
+    }
+    .advantages-icon p{
+        text-align: justify;
+        font-size: small;
+    }
+    .advantages img{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    .why-choose-us-info-extands{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .learn-more{
+        position: absolute;
+        width: 140px;
+        height: 40px;
+        font-size: medium;
+    }
+    .call-us-now-extend h2{
+        font-size: medium;
+    }
+    .call-us-now{
+        gap: 5px;
+        margin-left: 160px;
+        margin-bottom: 10px ;
+    }
+    .call-us-now img{
+        width: 50px;
+        height: 50px;
     }
 }
