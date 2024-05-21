@@ -229,7 +229,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .clients-satisfactions-inner-div{
     display: flex;
@@ -264,7 +263,6 @@ main{
 .clients-satisfactions-icons {
     display: -webkit-flex;
     margin-left: 30px;
-
 }
 .bitmoji-1{
     margin-top: -15px;
@@ -297,7 +295,6 @@ main{
     width: 15%;
     aspect-ratio: 2/1;
     object-fit: contain;
-
 }
 .why-choose-us-title{
     position: relative;
@@ -354,7 +351,6 @@ main{
     flex-direction: column;
     gap: 5px;
     max-height: 30px;
-
 }
 .advantages-icon h1{
     color: rgb(51, 59, 51);
@@ -400,7 +396,83 @@ main{
 }
 .call-us-now-extend h2{
     font-size: 25px;
-
+}
+.offered-services-title{
+    position: relative;
+    margin-left: 42vw;
+    margin-top: 60px;
+    color:rgb(51,58,47);  
+}
+.offered-services-list{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 20px;
+    height: 100px;
+    width: 75vw;
+    background-color:  rgb(51,58,47);
+    align-items: center;
+    justify-content: space-evenly;
+    left: 12%;
+    margin-top: 20px; 
+    color: white;
+    font-size: 25px;   
+    border-radius: 20px;
+    z-index: 2;
+    border: solid 4px white;
+}
+.offered-services-list-outterbox{
+    height: 54px;
+    width: 75.7vw;
+    position: relative;
+    margin-top: -50px;
+    background-color: rgb(235, 237, 223); 
+    left: 11.65%;
+    border: solid 4px rgb(188, 191, 175);
+    z-index: 1;
+}
+.offered-services{
+    display: flex;
+    position: relative;
+    border: solid 4px rgb(188, 191, 175);
+    background-color: rgb(235, 237, 223);
+    width: 95vw;  
+    height: 78vh;  
+    left: 50%;
+    transform: translate(-50%,-8%);
+    border-radius: 50px;
+    padding: 50px 20px 20px 20px;
+}
+.offered-services-img{
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 25%;
+    aspect-ratio: 1/1.5;
+    border-radius: 40px;
+}
+.offered-services-infos{
+    display: grid;
+    grid-template-columns:1fr  1fr; /* Two equal columns */
+    gap: 10px; /* Space between items */
+    column-gap: 30%;
+    padding: 30px;
+    text-align: justify;
+}
+.offered-services-info{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(188, 191, 175) ;
+    border: solid 4px white;
+    border-radius: 20px;
+}
+.offered-services-info img{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: relative;
 }
 @media screen and (max-width: 878px) {
     .logo{
@@ -423,7 +495,6 @@ main{
         position: absolute;
         right: 5%;
         margin-top: 10px;
-
     }
     .nav-active {
         display: flex;
@@ -615,7 +686,6 @@ main{
     .why-choose-us-info-extands{
         display: flex;
         flex-direction: row;
-
     }
     .learn-more{
         position: absolute;

@@ -5,7 +5,6 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const letschat = document.querySelector('.letschat');
 
-
 //menu bar
 burger.addEventListener('click', () => {
 navLinks.classList.toggle('nav-active');
@@ -72,8 +71,3 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
     clearInterval(intervalId);
 });
-
-
-
-
-
